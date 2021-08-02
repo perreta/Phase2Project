@@ -6,6 +6,7 @@ function Grocery ({ id, input, priority }) {
         })
         .then(res => res.json())
         .then(data => console.log(data))
+        //USE SETTER FUNCTION
     }
     
     return(

@@ -9,7 +9,7 @@ function ToDoContainer () {
         fetch("http://localhost:8000/todos")
             .then(resp=>resp.json())
             .then(data=>setToDoArray(data))
-    }, [toDoArray])
+    }, [])
     
     const toDo = toDoArray.map(toDo => {
         return <ToDo key={toDo.id} id={toDo.id} input={toDo.input} priority={toDo.priority} />

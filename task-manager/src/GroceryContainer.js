@@ -9,7 +9,7 @@ function GroceryContainer () {
         fetch("http://localhost:8000/groceries")
             .then(resp=>resp.json())
             .then(data=>setGroceryArray(data))
-    }, [groceryArray])
+    }, [])
     
     const grocery = groceryArray.map(item => {
         return <Grocery key={item.id} id={item.id} input={item.input} priority={item.priority} />
