@@ -5,8 +5,9 @@ function Main () {
     return (
         <>
             <GroceryContainer />
-            <br/>
+            <hr/>
             <ToDoContainer />
+            <hr />
         </>
     )
 }

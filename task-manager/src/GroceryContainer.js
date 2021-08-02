@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Grocery from './Grocery'
+import GroceryForm from './GroceryForm'
 
 function GroceryContainer () { 
     
@@ -7,7 +8,9 @@ function GroceryContainer () {
     useEffect(() => {
         fetch("http://localhost:8000/groceries")
             .then(resp=>resp.json())
-            .then(data=>setGroceryArray(data))
+            .then(data=> {
+                setGroceryArray(data)
+            })
     }, [])
     
     const grocery = groceryArray.map(grocery => {
@@ -16,7 +19,8 @@ function GroceryContainer () {
 
     return (
         <>
-            <input></input>
+            <h1>GROCERIES</h1>
+            <GroceryForm />
             {grocery}
         </>
     )

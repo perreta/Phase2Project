@@ -1,7 +1,7 @@
 
 function ToDo ({ input, priority }) { 
     return(
-        <div className={{priority}}>
+        <div className={priority}>
             <h3>{input}</h3>
             <button>X</button>
             <input type="checkbox" />
