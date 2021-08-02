@@ -1,7 +1,7 @@
 import React from 'react';
-import Routing from './Routing'
+// import Routing from './Routing'
 
-export default function Header () { 
+ function Header () { 
     return (
         <body>
             <nav>
@@ -16,3 +16,5 @@ export default function Header () {
         </body>
     )
 }
+
+export default Header

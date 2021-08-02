@@ -1,8 +1,14 @@
-import TaskContainer from "./TaskContainer";
+import GroceryContainer from "./GroceryContainer";
+import ToDoContainer from "./ToDoContainer";
 
-export default function Main () { 
+function Main () { 
     return (
-        <TaskContainer />
+        <>
+            <GroceryContainer />
+            <br/>
+            <ToDoContainer />
+        </>
     )
 }
 
+export default Main

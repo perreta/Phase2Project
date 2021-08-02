@@ -1,0 +1,37 @@
+{
+    "groceries": [
+      {
+        "id": 1,
+        "input": "Milk",
+        "priority": "low"
+      },
+      {
+        "id": 2,
+        "input": "Coffee",
+        "priority": "high"
+      },
+      {
+        "id": 3,
+        "input": "Eggs",
+        "priority": "medium"
+      }
+    ],
+
+    "todos": [
+        {
+          "id": 1,
+          "input": "Groceries",
+          "priority": "low"
+        },
+        {
+          "id": 2,
+          "input": "Laundry",
+          "priority": "medium"
+        },
+        {
+          "id": 3,
+          "input": "code",
+          "priority": "high"
+        }
+      ]
+  }
