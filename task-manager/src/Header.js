@@ -1,7 +1,7 @@
 import React from 'react';
-import Routing from './Routing'
+// import Routing from './Routing'
 
-export default function Header () { 
+ function Header () { 
     return (
         <>
             <h1>TASK MANAGER</h1>
@@ -9,3 +9,5 @@ export default function Header () {
         </>
     )
 }
+
+export default Header
