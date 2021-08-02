@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
-import Grocery from './Grocery'
-import GroceryForm from './GroceryForm'
+import { useState, useEffect } from "react"
+import Grocery from "./Grocery"
+import GroceryForm from "./GroceryForm"
 
 function GroceryContainer () { 
     
@@ -8,19 +8,18 @@ function GroceryContainer () {
     useEffect(() => {
         fetch("http://localhost:8000/groceries")
             .then(resp=>resp.json())
-            .then(data=> {
-                setGroceryArray(data)
-            })
-    }, [])
+            .then(data=>setGroceryArray(data))
+    }, [groceryArray])
     
-    const grocery = groceryArray.map(grocery => {
-        return <Grocery keys={grocery.id} input={grocery.input} priority={grocery.priority} />
+    const grocery = groceryArray.map(item => {
+        return <Grocery key={item.id} id={item.id} input={item.input} priority={item.priority} />
     })
 
+    
     return (
         <>
-            <h1>GROCERIES</h1>
-            <GroceryForm />
+           <h1>GROCERIES</h1>
+           <GroceryForm setGroceryArray={setGroceryArray}/>
             {grocery}
         </>
     )

@@ -6,11 +6,9 @@ function App() {
   return (
     <>
       <Header />
-<<<<<<< HEAD
       <hr />
-=======
       <Home />
->>>>>>> 520b1436ac50ba463eaca495b9bcbca960a12ad9
+      <hr />
       <Main />
     </>
   );

@@ -7,7 +7,6 @@ function ToDoForm({ setToDoArray }){
     function handleSubmit(event) {
         event.preventDefault()
         const newToDo = { input, priority }
-        console.log(newToDo)
         fetch('http://localhost:8000/todos', {
             method: 'POST', headers: {
                 'Content-Type': 'application/json'
@@ -37,6 +36,7 @@ function ToDoForm({ setToDoArray }){
                 </label>
                 <label>Set priority: </label>
                 <select className="priority" onChange={handlePriorityChange} name="priority">
+                    <option selected="selected" disabled> </option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
