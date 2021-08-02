@@ -10,6 +10,7 @@ import React from 'react';
                     <li><a href="#">Home</a></li>
                     <li><a href="#">To-Do</a></li>
                     <li><a href="#">Groceries</a></li>
+                    <li><a href="#">Misc</a></li>
                 </ul>
             </nav>
             {/* <Routing /> */}
