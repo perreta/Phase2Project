@@ -85,18 +85,38 @@ a.active,a:hover{
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 35px;
- }
+}
+
+.todo{
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.labels{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.tasks{
+    float:left;
+    border: 2px;
+}
+
 
 
 
 .low{
-    background-color: green;
+    background-color: rgb(73, 170, 73);
 }
 .medium{
-    background-color: orange;
+    background-color: rgb(223, 168, 68);
 }
 .high{
-    background-color: red;
+    background-color: rgb(184, 69, 69);
 }
 #completed{
     background-color: gray;

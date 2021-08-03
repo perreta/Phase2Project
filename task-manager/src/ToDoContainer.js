@@ -18,7 +18,7 @@ function ToDoContainer () {
     
     return (
         <>
-           <h1>TO-DOS</h1>
+           <h1 className="todo">TO-DOS</h1>
            <ToDoForm setToDoArray={setToDoArray}/>
            <hr/>
             {toDo}
