@@ -1,11 +1,16 @@
-function ToDo ({ id, input, priority }) {   
+function ToDo ({ id, input, priority, toDoArray, setToDoArray }) {   
     function handleRemove(e) {
         console.log(e.target)
         fetch(`http://localhost:8000/todos/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        const toDosToDisplay = toDoArray.filter((toDo) => {
+            if (toDo.id === id) return false
+            else return true
+        })
+        setToDoArray(toDosToDisplay)
+        // .then(data => console.log(data))
     }
     
     return(

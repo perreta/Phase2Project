@@ -20,7 +20,7 @@
     {
       "id": 1,
       "input": "Groceries",
-      "priority": "medium"
+      "priority": "low"
     },
     {
       "id": 2,

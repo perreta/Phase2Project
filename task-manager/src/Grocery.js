@@ -1,12 +1,15 @@
-function Grocery ({ id, input, priority }) {   
+function Grocery ({ id, input, priority, groceryArray, setGroceryArray }) {   
     function handleRemove(e) {
         console.log(e.target)
         fetch(`http://localhost:8000/groceries/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())
-        .then(data => console.log(data))
-        //USE SETTER FUNCTION
+        const groceriesToDisplay = groceryArray.filter((grocery) => {
+            if (grocery.id === id) return false
+            else return true
+        })
+        setGroceryArray(groceriesToDisplay)
     }
     
     return(

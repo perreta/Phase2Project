@@ -12,7 +12,7 @@ function GroceryContainer () {
     }, [])
     
     const grocery = groceryArray.map(item => {
-        return <Grocery key={item.id} id={item.id} input={item.input} priority={item.priority} />
+        return <Grocery key={item.id} id={item.id} input={item.input} priority={item.priority} groceryArray={groceryArray} setGroceryArray={setGroceryArray} />
     })
 
     

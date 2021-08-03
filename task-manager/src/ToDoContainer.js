@@ -12,7 +12,7 @@ function ToDoContainer () {
     }, [])
     
     const toDo = toDoArray.map(toDo => {
-        return <ToDo key={toDo.id} id={toDo.id} input={toDo.input} priority={toDo.priority} />
+        return <ToDo key={toDo.id} id={toDo.id} input={toDo.input} priority={toDo.priority} toDoArray={toDoArray} setToDoArray={setToDoArray} />
     })
 
     
