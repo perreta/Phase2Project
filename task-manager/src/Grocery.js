@@ -1,4 +1,9 @@
+import { useState } from 'react';
+
 function Grocery ({ id, input, priority, groceryArray, setGroceryArray }) {   
+
+    const [ isChecked, setIsChecked ] = useState(false)
+
     function handleRemove(e) {
         console.log(e.target)
         fetch(`http://localhost:8000/groceries/${id}`, {
@@ -11,13 +16,17 @@ function Grocery ({ id, input, priority, groceryArray, setGroceryArray }) {
         })
         setGroceryArray(groceriesToDisplay)
     }
+
+    function handleOnChange(){
+        setIsChecked(prevIsChecked => !prevIsChecked)
+    }
     
     return(
-        <div className={priority}>
+        <div className={priority} id={isChecked ? "completed" : ""}>
             <h3>{input}</h3>
-            <button onClick={handleRemove}>X</button>
-            <input type="checkbox" />
-            <label>Completed?</label>
+            <button onClick={handleRemove} className="remove">X</button>
+            <input type="checkbox" className="checkbox" onChange={handleOnChange}/>
+            <label>{isChecked ? "Complete" : "Completed?"}</label>
             <hr/>
         </div>
     )

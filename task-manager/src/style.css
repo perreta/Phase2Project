@@ -79,4 +79,7 @@ p{
 .high{
     background-color: red;
 }
-
+#completed{
+    background-color: gray;
+    color: rgb(179, 179, 179);
+}
