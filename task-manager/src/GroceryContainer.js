@@ -20,6 +20,7 @@ function GroceryContainer () {
         <>
            <h1>GROCERIES</h1>
            <GroceryForm setGroceryArray={setGroceryArray}/>
+           <hr/>
             {grocery}
         </>
     )

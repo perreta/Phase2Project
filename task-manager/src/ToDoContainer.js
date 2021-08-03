@@ -20,6 +20,7 @@ function ToDoContainer () {
         <>
            <h1>TO-DOS</h1>
            <ToDoForm setToDoArray={setToDoArray}/>
+           <hr/>
             {toDo}
         </>
     )

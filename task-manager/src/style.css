@@ -70,5 +70,13 @@ p{
      max-width: 100px;
  }
 
-
+.low{
+    background-color: green;
+}
+.medium{
+    background-color: orange;
+}
+.high{
+    background-color: red;
+}
 

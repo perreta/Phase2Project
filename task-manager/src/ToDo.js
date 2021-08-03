@@ -19,6 +19,7 @@ function ToDo ({ id, input, priority, toDoArray, setToDoArray }) {
             <button onClick={handleRemove}>X</button>
             <input type="checkbox" />
             <label>Completed?</label>
+            <hr/>
         </div>
     )
 }

@@ -18,6 +18,7 @@ function Grocery ({ id, input, priority, groceryArray, setGroceryArray }) {
             <button onClick={handleRemove}>X</button>
             <input type="checkbox" />
             <label>Completed?</label>
+            <hr/>
         </div>
     )
 }
