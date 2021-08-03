@@ -4,8 +4,11 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    background-color: #cae6d1;
     font-family:'Times New', Courier, monospace;    
+}
+
+body{
+    background-color: #cae6d1;
 }
 
 img{
