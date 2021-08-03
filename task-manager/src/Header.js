@@ -1,5 +1,5 @@
 import React from 'react';
-// import Routing from './Routing'
+import { NavLink } from "react-router-dom"
 
  function Header () { 
     return (
@@ -7,13 +7,12 @@ import React from 'react';
             <nav>
                 <label className="title">☞ TaskMaster ☜</label>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">To-Do</a></li>
-                    <li><a href="#">Groceries</a></li>
+                    <li><NavLink exact to="/">Home</NavLink></li>
+                    <li><NavLink to="/todo">To-Do</NavLink></li>
+                    <li><NavLink to="/groceries">Groceries</NavLink></li>
                     <li><a href="#">Misc</a></li>
                 </ul>
             </nav>
-            {/* <Routing /> */}
         </body>
     )
 }
