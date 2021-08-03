@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom"
                     <li><NavLink exact to="/">Home</NavLink></li>
                     <li><NavLink to="/todo">To-Do</NavLink></li>
                     <li><NavLink to="/groceries">Groceries</NavLink></li>
-                    <li><a href="#">Misc</a></li>
+                    <li><NavLink to="/misc">Misc</NavLink></li>
                 </ul>
             </nav>
         </body>

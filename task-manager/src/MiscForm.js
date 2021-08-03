@@ -1,0 +1,49 @@
+import { useState } from "react"
+
+function MiscForm({ setMiscArray }){
+    const [ input, setInput ] = useState("");
+    const [ priority, setPriority ] = useState("")
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        const newItem = { input, priority }
+        fetch('http://localhost:8000/misc', {
+            method: 'POST', headers: {
+                'Content-Type': 'application/json'
+            }, body: JSON.stringify(newItem)
+        })
+        .then(resp => resp.json())
+        .then(newItemResponse => {
+            console.log(newItemResponse)
+            setMiscArray(prevItems => [newItemResponse, ...prevItems]) 
+        })
+        event.target.reset()
+    }
+
+    function handleInputChange(event){
+        setInput(event.target.value)
+    }
+
+    function handlePriorityChange(event){
+        setPriority(event.target.value)
+    }
+
+    return (
+        <form id="misc-form" onSubmit={handleSubmit}>
+                <label>
+                    New Item: 
+                    <input onChange={handleInputChange} type="text" name="input" />
+                </label>
+                <label>Set priority: </label>
+                <select className="priority" onChange={handlePriorityChange} name="priority">
+                    <option selected="selected" disabled> </option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="submit" value="Submit" />
+            </form>
+    )
+}
+
+export default MiscForm

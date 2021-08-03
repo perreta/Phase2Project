@@ -1,5 +1,6 @@
 import GroceryContainer from "./GroceryContainer";
 import ToDoContainer from "./ToDoContainer";
+import MiscContainer from "./MiscContainer";
 import Home from "./Home";
 import { Switch, Route } from "react-router-dom";
 import React, { useState } from "react";
@@ -13,6 +14,9 @@ function Main () {
                 </Route>
                 <Route path="/groceries">
                     <GroceryContainer />
+                </Route>
+                <Route path="/misc">
+                    <MiscContainer />
                 </Route>
                 <Route exact path="/">
                     <Home />
