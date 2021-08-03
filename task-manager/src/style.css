@@ -68,23 +68,26 @@ a.active,a:hover{
     transition: .5s;
 }
 
-h1{
+#title{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 50px;
-    margin-top: 1px;
-    padding: 20px;
+    font-size: 80px;
+    margin-top: 30px;
+    padding: 50px;
+    text-decoration: underline;
  }
 
- p{
+#description{
     text-align: center; 
     color: rgb(0, 0, 0);
     padding-top: 25px;
     padding-inline: 475px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 35px;
  }
+
+
 
 .low{
     background-color: green;
