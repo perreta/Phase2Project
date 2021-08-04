@@ -59,12 +59,12 @@
     {
       "id": 2,
       "input": "Dogs",
-      "priority": "medium"
+      "priority": "low"
     },
     {
       "id": 3,
       "input": "Hamsters",
-      "priority": "high"
+      "priority": "low"
     }
   ]
 }
