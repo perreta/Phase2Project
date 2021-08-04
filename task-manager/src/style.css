@@ -31,7 +31,7 @@ nav{
 
 label.title{
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 45px;
     line-height: 80px;
     padding: 0 100px;
     background: #75cbd1;
@@ -55,7 +55,7 @@ nav ul li{
 
 nav ul li a{
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size:30px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -169,3 +169,30 @@ a.active,a:hover{
     background-color: gray;
     color: rgb(179, 179, 179);
 }
+
+/* CSS FOR DROPDOWN FUNCTIONALITY */
+ 
+  
+  .nav li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .dropdown a{
+    font-size: 18px;
+  }
+  
+  .nav ul {
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0);
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .nav li:hover ul {
+    left: 0;
+  }
+  
+  
