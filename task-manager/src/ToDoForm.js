@@ -42,7 +42,7 @@ function ToDoForm({ setToDoArray }){
                     <option value="high">High</option>
                 </select>
                 <input type="submit" value="Submit" />
-            </form>
+        </form>
     )
 }
 

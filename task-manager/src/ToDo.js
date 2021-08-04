@@ -22,12 +22,14 @@ function ToDo ({ id, input, priority, toDoArray, setToDoArray }) {
     }
 
     return(
-        <div className={priority} id={isChecked ? "completed" : ""}>
-            <h3>{input}</h3>
-            <button onClick={handleRemove} className="remove">X</button>
-            <input type="checkbox" className="checkbox" onChange={handleOnChange}/>
-            <label>{isChecked ? "Complete" : "Completed?"}</label>
-            <hr/>
+        <div className="bars">
+            <div className={priority} id={isChecked ? "completed" : ""}>
+                <h3 className="h3">{input}</h3>
+                <button onClick={handleRemove} className="remove">X</button>
+                <input type="checkbox" className="checkbox" onChange={handleOnChange}/>
+                <label>{isChecked ? "Complete" : "Completed?"}</label>
+                <hr/>
+            </div>
         </div>
     )
 }

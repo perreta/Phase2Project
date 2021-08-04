@@ -20,7 +20,6 @@ function ToDoContainer () {
         <>
            <h1 className="todo">TO-DOS</h1>
            <ToDoForm setToDoArray={setToDoArray}/>
-           <hr/>
             {toDo}
         </>
     )

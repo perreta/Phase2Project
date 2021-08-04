@@ -20,7 +20,7 @@ img{
 nav{
     font-family:'Courier New', Courier, monospace;
     background: #75cbd1;
-    height: 100px;
+    height: 101px;
     width: 80%;
     border: 10px solid #060b13dc;
     margin-left: 220px;
@@ -90,8 +90,8 @@ a.active,a:hover{
 .todo{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 80px;
-    margin-top: 30px;
+    font-size: 60px;
+    margin-top: 5px;
     padding: 50px;
 }
 
@@ -99,6 +99,8 @@ a.active,a:hover{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    margin-left: 430px;
+
 }
 
 .tasks{
@@ -106,6 +108,25 @@ a.active,a:hover{
     border: 2px;
 }
 
+
+
+
+
+
+
+.bars{
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+    padding: 10px;   
+    margin-left: 220px;
+    background-color: rgb(8, 8, 8);
+}
+
+.h3{
+    font-size: 80px;
+    text-align: center; 
+}
 
 
 
