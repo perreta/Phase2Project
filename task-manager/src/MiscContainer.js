@@ -20,7 +20,6 @@ function MiscContainer () {
         <>
            <h1 className="todo">MISC</h1>
            <MiscForm setMiscArray={setMiscArray}/>
-           <hr />
             {misc}
         </>
     )

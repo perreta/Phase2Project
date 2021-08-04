@@ -109,11 +109,6 @@ a.active,a:hover{
 }
 
 
-
-
-
-
-
 .bars{
     margin-top: 30px;
     width: 30%;
@@ -128,16 +123,47 @@ a.active,a:hover{
     text-align: center; 
 }
 
+.checkbox{
+    margin-left: 40px;
+    margin-top: 60px;
+    padding: 3px;
+}
+
+.complete{
+    font-size: 34px;
+    text-align: center; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.remove {
+  color: rgb(17, 16, 16);
+  border: 5px solid #030303dc;
+  background: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 565px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.remove:hover {
+  color: rgb(241, 71, 19);
+}
+
+.remove:active {
+  color: rgb(253, 159, 124);
+}
 
 
 .low{
-    background-color: rgb(73, 170, 73);
+    background-color: rgb(89, 207, 89);
 }
 .medium{
-    background-color: rgb(223, 168, 68);
+    background-color: rgb(241, 180, 67);
 }
 .high{
-    background-color: rgb(184, 69, 69);
+    background-color: rgb(243, 49, 49);
 }
 #completed{
     background-color: gray;

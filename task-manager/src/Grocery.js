@@ -25,10 +25,9 @@ function Grocery ({ id, input, priority, groceryArray, setGroceryArray }) {
         <div className="bars">
             <div className={priority} id={isChecked ? "completed" : ""}>
                 <h3 className="h3">{input}</h3>
-                <button onClick={handleRemove} className="remove">X</button>
                 <input type="checkbox" className="checkbox" onChange={handleOnChange}/>
-                <label>{isChecked ? "Complete" : "Completed?"}</label>
-                <hr/>
+                <label className="complete">{isChecked ? "Complete" : "Completed?"}</label>
+                <button onClick={handleRemove} className="remove">Delete</button>
             </div>
         </div>
     )
