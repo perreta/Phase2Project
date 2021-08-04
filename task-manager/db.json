@@ -33,38 +33,22 @@
       "priority": "high"
     }
   ],
-  "misc": [
-    {
-      "id": 1,
-      "input": "Cats",
-      "priority": "low"
-    },
-    {
-      "id": 2,
-      "input": "Dogs",
-      "priority": "medium"
-    },
-    {
-      "id": 3,
-      "input": "Hamsters",
-      "priority": "high"
-    }
-  ],
+  "misc": [],
   "watchlist": [
     {
       "id": 1,
-      "input": "Cats",
+      "title": "Cars 3",
       "priority": "low"
     },
     {
-      "id": 2,
-      "input": "Dogs",
-      "priority": "low"
+      "title": "Batman Begins",
+      "priority": "low",
+      "id": 2
     },
     {
-      "id": 3,
-      "input": "Hamsters",
-      "priority": "low"
+      "title": "Batman Returns",
+      "priority": "low",
+      "id": 3
     }
   ]
 }

@@ -2,9 +2,9 @@ import { useState, useEffect } from "react"
 import Watchlist from "./Watchlist"
 import WatchlistForm from "./WatchlistForm"
 
-function WatchlistContainer () { 
+function WatchlistContainer ({watchlistArray, setWatchlistArray}) { 
     
-    const [ watchlistArray, setWatchlistArray ] = useState([])
+    // const [ watchlistArray, setWatchlistArray ] = useState([])
     useEffect(() => {
         fetch("http://localhost:8000/watchlist")
             .then(resp=>resp.json())
@@ -12,7 +12,7 @@ function WatchlistContainer () {
     }, [])
     
     const watchlist = watchlistArray.map(item => {
-        return <Watchlist key={item.id} id={item.id} input={item.input} priority={item.priority} watchlistArray={watchlistArray} setWatchlistArray={setWatchlistArray} />
+        return <Watchlist key={item.id} id={item.id} input={item.title} priority={item.priority} watchlistArray={watchlistArray} setWatchlistArray={setWatchlistArray} />
     })
 
     

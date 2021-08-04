@@ -3,7 +3,7 @@ import Movie from "./Movie"
 import MovieSearchForm from "./MovieSearchForm"
 
 
-function MoviesContainer ({moviesToRender, handleSubmit, handleInputChange}) { 
+function MoviesContainer ({moviesToRender, handleSubmit, handleInputChange, setWatchlistArray}) { 
 
     console.log(moviesToRender)
     return (
@@ -15,6 +15,7 @@ function MoviesContainer ({moviesToRender, handleSubmit, handleInputChange}) {
            <ul className="movies">
                {moviesToRender.map((movie) => (
                    <Movie 
+                        setWatchlistArray={setWatchlistArray}
                         key={movie.id}
                         title={movie.Title}/>
                ))}

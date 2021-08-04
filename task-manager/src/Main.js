@@ -12,6 +12,8 @@ function Main () {
     const [moviesToRender, setMoviesToRender] = useState([])
     const [input, setInput] = useState("");
 
+    const [ watchlistArray, setWatchlistArray ] = useState([])
+
 
     function handleInputChange(event){
         setInput(event.target.value)
@@ -37,13 +39,17 @@ function Main () {
                     <MiscContainer />
                 </Route>
                 <Route path="/movies">
-                    <WatchlistContainer />
+                    <WatchlistContainer 
+                        watchlistArray={watchlistArray}
+                        setWatchlistArray={setWatchlistArray}
+                        />
                 </Route>
                 <Route path="/movieadd">
                     <MoviesContainer 
                         moviesToRender={moviesToRender}
                         handleSubmit={handleSubmit}
-                        handleInputChange={handleInputChange}/>
+                        handleInputChange={handleInputChange}
+                        setWatchlistArray={setWatchlistArray}/>
                 </Route>
                 <Route exact path="/">
                     <Home />
