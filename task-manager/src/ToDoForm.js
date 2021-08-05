@@ -47,12 +47,14 @@ function ToDoForm({ setToDoArray }){
                         <option value="medium">Medium</option>
                         <option value="high">High</option>
                     </select>
-                    <input type="submit" value="Submit" />
+                    <input className="submit-button" type="submit" value="Submit" />
             </form>
-            <label className="label3">
-                    Comment: 
-                    <input onChange={handleCommentInput} type="text" name="input" />
-            </label>
+            <div id="comment">
+                <label className="label3">
+                        Comment: 
+                        <input onChange={handleCommentInput} type="text" name="input" />
+                </label>
+            </div>
         </>
     )
 }

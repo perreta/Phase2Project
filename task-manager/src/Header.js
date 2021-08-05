@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
     return (
         <body>
             <nav className="head">
-                <label className="title">☞ TaskMaster ☜</label>
+                <h4 className="title">☞ TaskMaster ☜</h4>
                 
             </nav>
             <nav className="options">

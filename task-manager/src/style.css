@@ -33,19 +33,28 @@ img{
     font-weight: bold;
 }
 
-label.title{
-    margin-left: 635px;    
+.title{
+    text-align: center;
+    /* margin-left: 500px;     */
 }
 
 .options{
     font-family:'Courier New', Courier, monospace;
     background: #a9d8da;
     height: 101px;
-    width: 39%;
+    width: 50%;
     border: 8px solid #060b13dc;
-    margin-left: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
     border-radius: 5px;
     margin-bottom: 1px;
+}
+
+.Movierenders {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80em;
 }
 
 nav ul{
@@ -109,24 +118,40 @@ a.active,a:hover{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 530px;
-
+    margin-left: auto;
+    margin-right: 30px;
+    width: 48em;
 }
 
 .label2{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 220px;
-
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
 }
 
 .label3{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 545px;
+    margin-right: auto;
+    float: left;
+    width: 48em;
 
+}
+
+#todo-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
+}
+
+#comment{
+    margin-left: auto;
+    margin-right: auto;
+    width: 48em;
 }
 
 .tasks{
@@ -135,8 +160,10 @@ a.active,a:hover{
 }
 
 .todocontainer{
-    width: 60%;
-    margin-left: 317px;
+    width: 70%;
+    /* margin-left: 317px; */
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -145,12 +172,15 @@ a.active,a:hover{
     width: 30%;
     float: left;
     padding: 8px;   
-    margin-left: 200px;
     background-color: rgb(8, 8, 8);
+    margin-left: auto;
+    margin-right: 30px;
+    width: 20em;
+
 }
 
 .h3{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center; 
 }
 
@@ -177,13 +207,31 @@ a.active,a:hover{
 .remove {
   color: rgb(17, 16, 16);
   border: 5px solid #030303dc;
-  background: white;
+  background: #f5f4c8;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 230px;
+  margin-left: 200px;
   margin-bottom: 10px;
   padding: 3px;
 }
+
+.submit-button {
+    color: rgb(17, 16, 16);
+  border: 2px solid #030303dc;
+  background: #a9d8da;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+.submit-button:hover {
+    color: rgb(241, 71, 19);
+  }
+  
+.submit-button:active {
+    color: rgb(253, 159, 124);
+  }
 
 .remove:hover {
   color: rgb(241, 71, 19);
@@ -219,16 +267,20 @@ a.active,a:hover{
   }
   
   .dropdown a{
-    font-size: 18px;
-    
+    font-size: 15px;
   }
   
   .nav ul {
     background-color: rgb(0, 0, 0);
-    background: rgba(19, 16, 16, 0);
+    background: #a9d8da;
+    width: 105%;
+    margin-left: auto;
     list-style: none;
     position: absolute;
     left: -9999px;
+    border: 8px solid #060b13dc;
+    border-radius: 5px;
+    border-top: 0;
   }
   
   .nav li:hover ul {

@@ -41,7 +41,7 @@ function WatchlistForm({ setWatchlistArray }){
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-                <input type="submit" value="Submit" />
+                <input className="submit-button" type="submit" value="Submit" />
         </form>
     )
 }

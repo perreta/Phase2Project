@@ -3,12 +3,12 @@ import { useState } from "react"
 function MovieSearchForm({handleSubmit, handleInputChange}){
     
     return (
-        <form id="misc-form" onSubmit={handleSubmit}>
+        <form id="todo-form" onSubmit={handleSubmit}>
                 <label className="label1">
                     Search for a movie: 
                     <input onChange={handleInputChange} type="text" name="input" />
                 </label>
-                <input type="submit" value="Submit" />
+                <input className="submit-button" type="submit" value="Submit" />
             </form>
     )
 }

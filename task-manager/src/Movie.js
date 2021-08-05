@@ -23,13 +23,13 @@ function Movie({title, setWatchlistArray, imdbID}) {
     }
 
   return (
-      <>
+      <div className="Movierenders">
         <h1>
             {title}
-            <button onClick={openImdb}>see details</button>
-            <button onClick={handleClick}>add to watchlist</button>
+            <button className="submit-button" onClick={openImdb}>see details</button>
+            <button className="submit-button" onClick={handleClick}>add to watchlist</button>
         </h1>
-    </>
+    </div>
   );
 }
 

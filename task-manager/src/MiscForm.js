@@ -35,7 +35,7 @@ function MiscForm({ setMiscArray }){
 
     return (
         <>
-            <form id="misc-form" onSubmit={handleSubmit}>
+            <form id="todo-form" onSubmit={handleSubmit}>
                     <label className="label1">
                         New Item: 
                         <input onChange={handleInputChange} type="text" name="input" />
@@ -47,12 +47,14 @@ function MiscForm({ setMiscArray }){
                         <option value="medium">Medium</option>
                         <option value="high">High</option>
                     </select>
-                    <input type="submit" value="Submit" />
+                    <input className="submit-button" type="submit" value="Submit" />
             </form>
-            <label className="label3">
-                    Comment: 
-                    <input onChange={handleCommentInput} type="text" name="input" />
-            </label>
+            <div id="comment">
+                <label className="label3">
+                        Comment: 
+                        <input onChange={handleCommentInput} type="text" name="input" />
+                </label>
+            </div>
         </>
     )
 }
