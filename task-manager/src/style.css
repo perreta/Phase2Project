@@ -8,11 +8,11 @@
 }
 
 body{
-    background-color: #cae6d1;
+    background-color: #f5f4c8;
 }
 
 img{
-    max-width: 100px;
+    max-width: 80px;
     background:rgb(0, 0, 0);
     border-radius: 10px;
 }
@@ -30,16 +30,16 @@ img{
 }
 
 label.title{
-    margin-left: 800px;    
+    margin-left: 830px;    
 }
 
 .options{
     font-family:'Courier New', Courier, monospace;
-    background: #75cbd1;
+    background: #a9d8da;
     height: 101px;
-    width: 40%;
-    border: 10px solid #060b13dc;
-    margin-left: 675px;
+    width: 39%;
+    border: 8px solid #060b13dc;
+    margin-left: 735px;
     border-radius: 5px;
     margin-bottom: 1px;
 }
@@ -47,7 +47,7 @@ label.title{
 nav ul{
     float: right;
     margin-right: 20px;
-    background: #75cbd1;
+    
     
 }
 
@@ -55,7 +55,7 @@ nav ul li{
     display: inline-block;
     line-height: 75px;
     margin: 0 30px;
-    background: #75cbd1;
+    
 }
 
 nav ul li a{
@@ -63,23 +63,22 @@ nav ul li a{
     font-size:30px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
-    background: #75cbd1;
+    text-transform: uppercase;   
     font-weight: bold;
 }
 
 a.active,a:hover{
-    background: #b1d7f5;
+    background: #aff8ee;
     transition: .5s;
 }
 
 #title{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 80px;
+    font-size: 60px;
     margin-top: 30px;
-    padding: 50px;
     text-decoration: underline;
+    margin-bottom: 20px;
  }
 
 #description{
@@ -95,16 +94,17 @@ a.active,a:hover{
 .todo{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 5px;
     padding: 50px;
+    text-decoration: underline;
 }
 
 .labels{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 430px;
+    margin-left: 600px;
 
 }
 
@@ -113,18 +113,23 @@ a.active,a:hover{
     border: 2px;
 }
 
+.todocontainer{
+    width: 90%;
+    margin-left: 320px;
+
+}
 
 .bars{
     margin-top: 30px;
-    width: 30%;
+    width: 20%;
     float: left;
-    padding: 10px;   
-    margin-left: 220px;
+    padding: 8px;   
+    margin-left: 300px;
     background-color: rgb(8, 8, 8);
 }
 
 .h3{
-    font-size: 80px;
+    font-size: 50px;
     text-align: center; 
 }
 

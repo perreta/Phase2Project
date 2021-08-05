@@ -12,6 +12,7 @@ function MoviesContainer ({moviesToRender, handleSubmit, handleInputChange, setW
            <MovieSearchForm 
                 handleSubmit={handleSubmit}
                 handleInputChange={handleInputChange}/>
+            
            <ul className="movies">
                {moviesToRender.map((movie) => (
                    <Movie 

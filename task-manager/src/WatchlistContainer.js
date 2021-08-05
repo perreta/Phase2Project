@@ -20,7 +20,9 @@ function WatchlistContainer ({watchlistArray, setWatchlistArray}) {
         <>
            <h1 className="todo">WATCHLIST</h1>
            <WatchlistForm setWatchlistArray={setWatchlistArray}/>
-            {watchlist}
+           <div className="todocontainer">
+                {watchlist}
+           </div>
         </>
     )
 }

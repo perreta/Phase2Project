@@ -20,7 +20,9 @@ function GroceryContainer () {
         <>
            <h1 className="todo">GROCERIES</h1>
            <GroceryForm setGroceryArray={setGroceryArray}/>
-            {grocery}
+           <div className="todocontainer">
+                {grocery}
+           </div>
         </>
     )
 }
