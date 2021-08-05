@@ -6,7 +6,7 @@ function Watchlist ({ id, input, priority, watchlistArray, setWatchlistArray }) 
 
     function handleRemove(e) {
         console.log(e.target)
-        fetch(`http://localhost:8000/misc/${id}`, {
+        fetch(`http://localhost:8000/watchlist/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

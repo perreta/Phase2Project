@@ -21,7 +21,7 @@ function Main () {
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`http://www.omdbapi.com/?s=${input}KEYHERE`)
+        fetch(`http://www.omdbapi.com/?s=${input}&apikey=429ac81a`)
             .then(res => res.json())
             .then(json => setMoviesToRender(json.Search))
     }

@@ -18,11 +18,6 @@
   ],
   "todos": [
     {
-      "id": 1,
-      "input": "Groceries",
-      "priority": "low"
-    },
-    {
       "id": 2,
       "input": "Laundry",
       "priority": "medium"
@@ -31,6 +26,11 @@
       "id": 3,
       "input": "Code",
       "priority": "high"
+    },
+    {
+      "input": "Groceries",
+      "priority": "low",
+      "id": 4
     }
   ],
   "misc": [],
@@ -44,11 +44,6 @@
       "title": "Batman Begins",
       "priority": "low",
       "id": 2
-    },
-    {
-      "title": "Batman Returns",
-      "priority": "low",
-      "id": 3
     }
   ]
 }

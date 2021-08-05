@@ -22,6 +22,7 @@ function Movie({title, setWatchlistArray}) {
       <>
         <h1>
             {title}
+            <button onClick={() => console.log("hi")}>see details</button>
             <button onClick={handleClick}>add to watchlist</button>
         </h1>
     </>
