@@ -100,11 +100,19 @@ a.active,a:hover{
     text-decoration: underline;
 }
 
-.labels{
+.label1{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 600px;
+    margin-left: 720px;
+
+}
+
+.label2{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 300px;
 
 }
 
@@ -114,17 +122,17 @@ a.active,a:hover{
 }
 
 .todocontainer{
-    width: 90%;
-    margin-left: 320px;
+    width: 60%;
+    margin-left: 460px;
 
 }
 
 .bars{
     margin-top: 30px;
-    width: 20%;
+    width: 30%;
     float: left;
     padding: 8px;   
-    margin-left: 300px;
+    margin-left: 200px;
     background-color: rgb(8, 8, 8);
 }
 
@@ -134,13 +142,13 @@ a.active,a:hover{
 }
 
 .checkbox{
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 60px;
-    padding: 3px;
+    padding: 1px;
 }
 
 .complete{
-    font-size: 34px;
+    font-size: 25px;
     text-align: center; 
     font-weight: bold;
     margin-left: 10px;
@@ -150,9 +158,9 @@ a.active,a:hover{
   color: rgb(17, 16, 16);
   border: 5px solid #030303dc;
   background: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  margin-left: 565px;
+  margin-left: 300px;
   margin-bottom: 10px;
   padding: 3px;
 }
@@ -187,15 +195,17 @@ a.active,a:hover{
     float: left;
     margin-right: 10px;
     position: relative;
+    
   }
   
   .dropdown a{
     font-size: 18px;
+    
   }
   
   .nav ul {
-    background-color: #fff;
-    background: rgba(255, 255, 255, 0);
+    background-color: rgb(0, 0, 0);
+    background: rgba(19, 16, 16, 0);
     list-style: none;
     position: absolute;
     left: -9999px;

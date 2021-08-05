@@ -4,7 +4,7 @@ function MovieSearchForm({handleSubmit, handleInputChange}){
     
     return (
         <form id="misc-form" onSubmit={handleSubmit}>
-                <label className="labels">
+                <label className="label1">
                     Search for a movie: 
                     <input onChange={handleInputChange} type="text" name="input" />
                 </label>
