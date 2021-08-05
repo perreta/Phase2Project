@@ -22,7 +22,7 @@ img{
     height: 101px;
     width: 100%;
     border-radius: 5px;
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(0, 0, 0);
     line-height: 80px;
     padding: 10px;
@@ -30,7 +30,7 @@ img{
 }
 
 label.title{
-    margin-left: 830px;    
+    margin-left: 635px;    
 }
 
 .options{
@@ -39,14 +39,15 @@ label.title{
     height: 101px;
     width: 39%;
     border: 8px solid #060b13dc;
-    margin-left: 735px;
+    margin-left: 590px;
     border-radius: 5px;
     margin-bottom: 1px;
 }
 
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
+    margin-left: 25px;
     
     
 }
@@ -54,14 +55,14 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 75px;
-    margin: 0 30px;
+    margin: 0 25px;
     
 }
 
 nav ul li a{
     color: rgb(0, 0, 0);
-    font-size:30px;
-    padding: 7px 13px;
+    font-size:25px;
+    padding: 7px 1px;
     border-radius: 3px;
     text-transform: uppercase;   
     font-weight: bold;
@@ -75,7 +76,7 @@ a.active,a:hover{
 #title{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 30px;
     text-decoration: underline;
     margin-bottom: 20px;
@@ -88,15 +89,15 @@ a.active,a:hover{
     padding-inline: 475px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .todo{
     text-align: center; 
     color: rgb(0, 0, 0);
-    font-size: 70px;
-    margin-top: 5px;
-    padding: 50px;
+    font-size: 50px;
+    margin-top: 1px;
+    padding: 15px;
     text-decoration: underline;
 }
 
@@ -104,7 +105,7 @@ a.active,a:hover{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 720px;
+    margin-left: 530px;
 
 }
 
@@ -112,7 +113,7 @@ a.active,a:hover{
     font-size: 25px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 300px;
+    margin-left: 220px;
 
 }
 
@@ -123,7 +124,7 @@ a.active,a:hover{
 
 .todocontainer{
     width: 60%;
-    margin-left: 460px;
+    margin-left: 317px;
 
 }
 
@@ -148,7 +149,7 @@ a.active,a:hover{
 }
 
 .complete{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center; 
     font-weight: bold;
     margin-left: 10px;
@@ -158,9 +159,9 @@ a.active,a:hover{
   color: rgb(17, 16, 16);
   border: 5px solid #030303dc;
   background: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 300px;
+  margin-left: 230px;
   margin-bottom: 10px;
   padding: 3px;
 }

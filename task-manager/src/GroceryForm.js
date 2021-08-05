@@ -3,6 +3,7 @@ import { useState } from "react"
 function GroceryForm({ setGroceryArray }){
     const [ input, setInput ] = useState("");
     const [ priority, setPriority ] = useState("")
+    const [ text, commentInput ] = useState("")
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -24,6 +25,10 @@ function GroceryForm({ setGroceryArray }){
         setInput(event.target.value)
     }
 
+    function handleCommentInput(event) {
+        commentInput(event.target.value)
+    }
+
     function handlePriorityChange(event){
         setPriority(event.target.value)
     }
@@ -32,6 +37,7 @@ function GroceryForm({ setGroceryArray }){
         <form id="grocery-form" onSubmit={handleSubmit}>
                 <label className="label1">
                     New Item: 
+                    <input onChange={handleInputChange} type="text" name="input" />
                     <input onChange={handleInputChange} type="text" name="input" />
                 </label>
                 <label className="label2">Set priority: </label>
@@ -42,7 +48,7 @@ function GroceryForm({ setGroceryArray }){
                     <option value="high">High</option>
                 </select>
                 <input type="submit" value="Submit" />
-            </form>
+        </form>
     )
 }
 
