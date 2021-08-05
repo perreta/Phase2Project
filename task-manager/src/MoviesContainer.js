@@ -16,7 +16,8 @@ function MoviesContainer ({moviesToRender, handleSubmit, handleInputChange, setW
                {moviesToRender.map((movie) => (
                    <Movie 
                         setWatchlistArray={setWatchlistArray}
-                        key={movie.id}
+                        key={movie.imdbID}
+                        imdbID={movie.imdbID}
                         title={movie.Title}/>
                ))}
            </ul>

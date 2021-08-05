@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Movie({title, setWatchlistArray}) {
+function Movie({title, setWatchlistArray, imdbID}) {
 
     function handleClick(){
         console.log('hi')
@@ -18,11 +18,15 @@ function Movie({title, setWatchlistArray}) {
         })
     }
 
+    function openImdb(){
+        window.open(`https://www.imdb.com/title/${imdbID}`, "_blank")
+    }
+
   return (
       <>
         <h1>
             {title}
-            <button onClick={() => console.log("hi")}>see details</button>
+            <button onClick={openImdb}>see details</button>
             <button onClick={handleClick}>add to watchlist</button>
         </h1>
     </>
