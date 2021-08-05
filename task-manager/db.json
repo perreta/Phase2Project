@@ -33,7 +33,13 @@
       "id": 4
     }
   ],
-  "misc": [],
+  "misc": [
+    {
+      "input": "Gym",
+      "priority": "medium",
+      "id": 1
+    }
+  ],
   "watchlist": [
     {
       "id": 1,
@@ -44,6 +50,11 @@
       "title": "Batman Begins",
       "priority": "low",
       "id": 2
+    },
+    {
+      "title": "American Pie",
+      "priority": "low",
+      "id": 3
     }
   ]
 }
