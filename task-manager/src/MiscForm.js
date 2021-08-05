@@ -3,10 +3,11 @@ import { useState } from "react"
 function MiscForm({ setMiscArray }){
     const [ input, setInput ] = useState("");
     const [ priority, setPriority ] = useState("")
+    const [ text, commentInput ] = useState("")
 
     function handleSubmit(event) {
         event.preventDefault()
-        const newItem = { input, priority }
+        const newItem = { input, priority, text}
         fetch('http://localhost:8000/misc', {
             method: 'POST', headers: {
                 'Content-Type': 'application/json'
@@ -24,25 +25,35 @@ function MiscForm({ setMiscArray }){
         setInput(event.target.value)
     }
 
+    function handleCommentInput(event) {
+        commentInput(event.target.value)
+    }
+
     function handlePriorityChange(event){
         setPriority(event.target.value)
     }
 
     return (
-        <form id="misc-form" onSubmit={handleSubmit}>
-                <label className="label1">
-                    New Item: 
-                    <input onChange={handleInputChange} type="text" name="input" />
-                </label>
-                <label className="label2">Set priority: </label>
-                <select className="priority" onChange={handlePriorityChange} name="priority">
-                    <option selected="selected" disabled> </option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-                <input type="submit" value="Submit" />
+        <>
+            <form id="misc-form" onSubmit={handleSubmit}>
+                    <label className="label1">
+                        New Item: 
+                        <input onChange={handleInputChange} type="text" name="input" />
+                    </label>
+                    <label className="label2">Set priority: </label>
+                    <select className="priority" onChange={handlePriorityChange} name="priority">
+                        <option selected="selected" disabled> </option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <input type="submit" value="Submit" />
             </form>
+            <label className="label3">
+                    Comment: 
+                    <input onChange={handleCommentInput} type="text" name="input" />
+            </label>
+        </>
     )
 }
 

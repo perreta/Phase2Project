@@ -3,41 +3,48 @@
     {
       "id": 1,
       "input": "Milk",
-      "priority": "low"
+      "priority": "low",
+      "text": "Get low fat milk"
     },
     {
       "id": 2,
       "input": "Coffee",
-      "priority": "high"
+      "priority": "high",
+      "text": "Get decaffeinated coffee"
     },
     {
       "id": 3,
       "input": "Eggs",
-      "priority": "medium"
+      "priority": "medium",
+      "text": "Get 2 cartons of large eggs"
     }
   ],
   "todos": [
     {
       "id": 2,
       "input": "Laundry",
-      "priority": "medium"
+      "priority": "medium",
+      "text": "Whites only in the morning"
     },
     {
       "id": 3,
       "input": "Code",
-      "priority": "high"
+      "priority": "high",
+      "text": "Finish the lame project"
     },
     {
       "input": "Groceries",
       "priority": "low",
-      "id": 4
+      "id": 4,
+      "text": "Bring large bags"
     }
   ],
   "misc": [
     {
       "input": "Gym",
       "priority": "medium",
-      "id": 1
+      "id": 1,
+      "text": "Don't skip leg day"
     }
   ],
   "watchlist": [

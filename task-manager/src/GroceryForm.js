@@ -7,7 +7,7 @@ function GroceryForm({ setGroceryArray }){
 
     function handleSubmit(event) {
         event.preventDefault()
-        const newItem = { input, priority }
+        const newItem = { input, priority, text }
         fetch('http://localhost:8000/groceries', {
             method: 'POST', headers: {
                 'Content-Type': 'application/json'
@@ -34,21 +34,26 @@ function GroceryForm({ setGroceryArray }){
     }
 
     return (
-        <form id="grocery-form" onSubmit={handleSubmit}>
-                <label className="label1">
-                    New Item: 
-                    <input onChange={handleInputChange} type="text" name="input" />
-                    <input onChange={handleInputChange} type="text" name="input" />
-                </label>
-                <label className="label2">Set priority: </label>
-                <select className="priority" onChange={handlePriorityChange} name="priority">
-                    <option selected="selected" disabled> </option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-                <input type="submit" value="Submit" />
-        </form>
+        <>
+            <form id="grocery-form" onSubmit={handleSubmit}>
+                    <label className="label1">
+                        New Item: 
+                        <input onChange={handleInputChange} type="text" name="input" />
+                    </label>
+                    <label className="label2">Set priority: </label>
+                    <select className="priority" onChange={handlePriorityChange} name="priority">
+                        <option selected="selected" disabled> </option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <input type="submit" value="Submit" />
+            </form>
+            <label className="label3">
+                    Comment: 
+                    <input onChange={handleCommentInput} type="text" name="input" />
+            </label>
+        </>
     )
 }
 

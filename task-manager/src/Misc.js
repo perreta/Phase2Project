@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Misc ({ id, input, priority, miscArray, setMiscArray }) {   
+function Misc ({ id, input, priority, miscArray, setMiscArray, text }) {   
 
     const [ isChecked, setIsChecked ] = useState(false)
 
@@ -25,6 +25,7 @@ function Misc ({ id, input, priority, miscArray, setMiscArray }) {
         <div className="bars">
             <div className={priority} id={isChecked ? "completed" : ""}>
                 <h3 className="h3">{input}</h3>
+                <p className="textcomment">{text}</p>
                 <input type="checkbox" className="checkbox" onChange={handleOnChange}/>
                 <label className="complete">{isChecked ? "Complete" : "Completed?"}</label>
                 <button onClick={handleRemove} className="remove">Delete</button>

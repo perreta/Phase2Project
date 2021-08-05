@@ -12,7 +12,7 @@ function MiscContainer () {
     }, [])
     
     const misc = miscArray.map(item => {
-        return <Misc key={item.id} id={item.id} input={item.input} priority={item.priority} miscArray={miscArray} setMiscArray={setMiscArray} />
+        return <Misc key={item.id} id={item.id} input={item.input} priority={item.priority} text={item.text} miscArray={miscArray} setMiscArray={setMiscArray} />
     })
 
     
